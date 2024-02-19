@@ -1,3 +1,45 @@
+@media (max-width: 600px) {
+  .text-container {
+    font-size: 1.5rem;
+  }
+
+  .yes-button,
+  .no-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .yes-button:before,
+  .yes-button:after,
+  .no-button:before,
+  .no-button:after {
+    width: 50px;
+    height: 100px;
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.yes-button {
+  animation: heartbeat 2s infinite;
+}
+
 .valentine-container {
   display: flex;
   justify-content: center;
@@ -5,24 +47,25 @@
   flex-direction: column;
   height: 100vh;
 }
+
 /* Custom class for Yes button styles */
 .yes-button {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #a7efb8; /* bg-green-500 */
+  background-color: #b7e0a4; /* bg-green-500 */
   color: #fff; /* text-white */
   font-weight: bold; /* font-bold */
-  padding: 8px 16px; /* py-2 px-4 */
-  border-radius: 8px; /* rounded */
+  padding: 2px 4px; /* py-2 px-4 */
+  border-radius: 60%; /* rounded */
   margin-right: 8px; /* mr-4 */
 }
 
 .yes-button:hover {
-  background-color: #4f7457; /* hover:bg-green-700 */
+  background-color: #ff5c8a; /* hover:bg-green-700 */
 }
 
 /* Custom class for No button styles */
 .no-button {
-  background-color: #c90d0d; /* bg-red-500 */
+  background-color: #1f0c0c; /* bg-red-500 */
   color: #fff; /* text-white */
   font-weight: bold; /* font-bold */
   padding: 8px 16px; /* py-2 px-4 */
@@ -40,6 +83,8 @@
 }
 
 .centered-container {
+  align-items: center;
+  justify-content: center;
   display: flex;
   font-size: large;
   font-family: "Times New Roman", Times, serif;
