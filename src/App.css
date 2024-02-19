@@ -102,3 +102,9 @@
   color: #007bff; /* Set the color as needed */
   text-decoration: none;
 }
+
+body {
+  background-color: #c09494; /* Example: soft pink color for Valentine's theme */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+}
