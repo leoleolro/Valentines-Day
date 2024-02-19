@@ -51,11 +51,15 @@
 /* Custom class for Yes button styles */
 .yes-button {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #b7e0a4; /* bg-green-500 */
+  background-color: #ffccd5; /* bg-green-500 */
   color: #fff; /* text-white */
   font-weight: bold; /* font-bold */
-  padding: 2px 4px; /* py-2 px-4 */
-  border-radius: 60%; /* rounded */
+  padding: 8px 16px; /* py-2 px-4 */
+  border-radius: 50%; /* rounded */
+
+  padding: 8px 16px; /* py-2 px-4 */
+  border-radius: 8px; /* rounded */
+  position: relative;
   margin-right: 8px; /* mr-4 */
 }
 
@@ -83,8 +87,8 @@
 }
 
 .centered-container {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   display: flex;
   font-size: large;
   font-family: "Times New Roman", Times, serif;
